@@ -101,6 +101,17 @@
 			<HorizontalLocation>Right</HorizontalLocation>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельНижняяРасширеннаяПодсказка" id="20"/>
 			<ChildItems>
+				<Button name="КомандаТаблДокум" id="37">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КомандаТаблДокум</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличный документ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаТаблДокумРасширеннаяПодсказка" id="38"/>
+				</Button>
 				<Button name="КнопкаОК" id="21">
 					<Type>CommandBarButton</Type>
 					<DefaultButton>true</DefaultButton>
@@ -202,5 +213,25 @@
 			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
+		<Command name="КомандаТаблДокум" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда табл докум</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда табл докум</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаТаблДокум</Action>
+		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="ТаблицаДанных">
+			<Type/>
+		</Parameter>
+	</Parameters>
 </Form>
